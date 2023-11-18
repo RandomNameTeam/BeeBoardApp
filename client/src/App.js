@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <MyLeftNavBar/>
-      <MyBee/>
       <Routes>
         <Route path="/"
           element={<MainPage/>}
