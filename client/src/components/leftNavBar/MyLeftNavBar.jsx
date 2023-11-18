@@ -24,9 +24,6 @@ const MyLeftNavBar = () => {
                     <li>
                         <Link to='/order'><MyButtonSearch/></Link>
                     </li>
-                    <li>
-                        <Link to='/favorite'><MyButtonFavorite/></Link>
-                    </li>
                 </ul>
             </div>
         </div>

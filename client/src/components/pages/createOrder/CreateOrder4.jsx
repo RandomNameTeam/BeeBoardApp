@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import MyInput from '../../ui/inputs/MyInput';
 import MyButton from '../../ui/buttons/buttonOrange/MyButton';
 
-const CreateOrder = () => {
+const CreateOrder4 = () => {
     return (
         <div className={moduleCreateOrderPage.create}>
             <div className={moduleCreateOrderPage.createBox}>
@@ -18,18 +18,31 @@ const CreateOrder = () => {
                 </div>
                 <div>
                     <h2>
-                        Как к вам обращаться?
+                        Город
                     </h2>
-                    <MyInput title='Имя' />
+                    <MyInput title='Владивосток'/>
+                </div>
+                <div>
+                    <h2>
+                        Дом
+                    </h2>
+                    <MyInput title='Дом'/>
+                </div>
+                <div>
+                    <h2>
+                        Квартира
+                    </h2>
+                    <MyInput title='Дом'/>
                 </div>
                 <div style={{ 'margin-top': '30px', 'display': 'flex', 'alignItems': 'right', 'justifyContent': 'right' }}>
-                    <Link to='/create2'>
-                    <MyButton title='Далее' />
+                    <Link to='/'>
+                        <MyButton title='Далее' />
                     </Link>
                 </div>
+
             </div>
         </div>
     );
 };
 
-export default CreateOrder;
+export default CreateOrder4;

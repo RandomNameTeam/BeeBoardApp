@@ -1,10 +1,11 @@
 import React from 'react';
-import moduleCreateOrderPage from './CreateOrder.module.sass'
 import { Link } from 'react-router-dom';
+
+import moduleCreateOrderPage from './CreateOrder.module.sass'
 import MyInput from '../../ui/inputs/MyInput';
 import MyButton from '../../ui/buttons/buttonOrange/MyButton';
 
-const CreateOrder = () => {
+const CreateOrder2 = () => {
     return (
         <div className={moduleCreateOrderPage.create}>
             <div className={moduleCreateOrderPage.createBox}>
@@ -17,19 +18,26 @@ const CreateOrder = () => {
                     </h1>
                 </div>
                 <div>
-                    <h2>
-                        Как к вам обращаться?
-                    </h2>
-                    <MyInput title='Имя' />
+                    <p>
+                        Номер телефона
+                    </p>
+                    <MyInput title='8 999 000 00 00 '/>
+                </div>
+                <div>
+                    <p>
+                        Ссылка на телеграм
+                    </p>
+                    <MyInput title='https://t.me/user'/>
                 </div>
                 <div style={{ 'margin-top': '30px', 'display': 'flex', 'alignItems': 'right', 'justifyContent': 'right' }}>
-                    <Link to='/create2'>
-                    <MyButton title='Далее' />
+                    <Link to='/create3'>
+                        <MyButton title='Далее' />
                     </Link>
                 </div>
+
             </div>
         </div>
     );
 };
 
-export default CreateOrder;
+export default CreateOrder2;

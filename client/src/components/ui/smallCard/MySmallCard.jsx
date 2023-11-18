@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import moduelSmallCard from './MySmallCard.module.sass'
 
 import MyUserName from '../userName/MyUserName';
 import MyButton from '../buttons/buttonOrange/MyButton';
 import MyButtonLight from '../buttons/buttonOrangeLight/MyButtonLight';
+import BigCard from '../bigCard/BigCard';
 
 const MySmallCard = ({ name = 'Михаил', date, title, geo = 'Владивосток', ...props }) => {
+
+    const [modalActive, setModalActive] = useState(false)
+
     return (
         <div className={moduelSmallCard.cardBox}>
             <div style={{ 'padding': '20px' }}>
@@ -24,11 +28,12 @@ const MySmallCard = ({ name = 'Михаил', date, title, geo = 'Владиво
                     {title}
                 </div>
                 <div className={moduelSmallCard.buttonBox}>
-                    <MyButton title="Скрыть" />
+                    <MyButton title="Скрыть" onClick={() => setModalActive(true)} />
                     <MyButtonLight title="Подробнее" />
                 </div>
             </div>
-
+            <BigCard active={modalActive}
+                setActive={setModalActive} />
         </div>
     );
 };
