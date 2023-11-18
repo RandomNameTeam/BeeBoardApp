@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import moduleBee from './MyBee.module.sass'
 import bee from './Sprite-0002.png'
 
@@ -6,7 +7,7 @@ const MyBee = () => {
     return (
         <div className={moduleBee.beeBox}>
             <img src={bee} alt='bee'/>
-            <link href='/'/>
+            <Link to='https://t.me/BeeAssistantBot' target="_blank" style={{'color' : '#FDC029', 'font-size': '24px', 'font-weight' : '300'}}>Bee Bot</Link>
         </div>
     );
 };

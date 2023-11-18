@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import CreateOrder from './components/pages/createOrder/CreateOrder';
 import SearchClient from './components/pages/searchClient/SearchClient';
 import MyBee from './components/ui/beeImg/MyBee';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           element={<SearchClient/>}
           />
       </Routes>
+      <Footer/>
     </div>
   );
 }

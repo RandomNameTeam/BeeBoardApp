@@ -13,7 +13,7 @@ const MyLeftNavBar = () => {
     return (
         <div>
             <div className={moduleNavBar.navbarBox}>
-                <MyUserName name={'Михал Михалыч'} />
+                <MyUserName name={'Михаил'} />
                 <ul>
                     <li>
                         <Link to='/'><MyButtonHome/></Link>
