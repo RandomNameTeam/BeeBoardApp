@@ -7,12 +7,13 @@ import MySmallCard from './components/ui/smallCard/MySmallCard';
 import { Routes, Route } from 'react-router-dom';
 import CreateOrder from './components/pages/createOrder/CreateOrder';
 import SearchClient from './components/pages/searchClient/SearchClient';
+import MyBee from './components/ui/beeImg/MyBee';
 
 function App() {
   return (
     <div className="App">
       <MyLeftNavBar/>
-      
+      <MyBee/>
       <Routes>
         <Route path="/"
           element={<MainPage/>}
