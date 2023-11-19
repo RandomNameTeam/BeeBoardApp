@@ -1,12 +1,11 @@
 import React from 'react';
 import moduleCreateOrderPage from './CreateOrder.module.sass'
-
 import { Link } from 'react-router-dom';
 
 import MyInput from '../../ui/inputs/MyInput';
 import MyButton from '../../ui/buttons/buttonOrange/MyButton';
 
-const SearchClient = () => {
+const Searchclient5 = () => {
     return (
         <div className={moduleCreateOrderPage.create}>
             <div className={moduleCreateOrderPage.createBox}>
@@ -18,14 +17,21 @@ const SearchClient = () => {
                         Найти клиента
                     </h1>
                 </div>
+                
                 <div>
                     <h2>
-                        Как к вам обращаться?
+                        Кратко опишите себя
                     </h2>
-                    <MyInput title='Имя' />
+                    <MyInput title='Информация о вас' style={{'height' : '100px'}} type='text'/>
+                </div>
+                <div>
+                    <h2>
+                        Ваше резюме
+                    </h2>
+                    <input title='Информация о вас' style={{'height' : '40px', 'background' : '#fff', 'borderRadius' : '10px', 'display' : 'flex', 'padding' : '6px'}} type='file'/>
                 </div>
                 <div style={{ 'margin-top': '30px', 'display': 'flex', 'alignItems': 'right', 'justifyContent': 'right' }}>
-                    <Link to='/order2'>
+                    <Link to='/'>
                         <MyButton title='Далее' />
                     </Link>
                 </div>
@@ -34,4 +40,4 @@ const SearchClient = () => {
     );
 };
 
-export default SearchClient;
+export default Searchclient5;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import moduleCategory from './MyCategory.module.sass'
 
-const MyCategory = ({ title, category = ['Сантехника', "Репетитор", "Учитель вождения"], ...props }) => {
+const MyCategory = ({ title, category=[], ...props }) => {
 
     const [categoryButton, setCategory] = useState(title)
 

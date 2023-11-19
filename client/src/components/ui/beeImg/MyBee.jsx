@@ -7,7 +7,7 @@ const MyBee = () => {
     return (
         <div className={moduleBee.beeBox}>
             <img src={bee} alt='bee'/>
-            <Link to='https://t.me/BeeAssistantBot' target="_blank" style={{'color' : '#FDC029', 'font-size': '24px', 'font-weight' : '300'}}>Bee Bot</Link>
+            <Link to='https://t.me/BeeAssistantBot' target="_blank" style={{'color' : '#DF751D', 'font-size': '24px', 'font-weight' : '300'}}>Bee Bot</Link>
         </div>
     );
 };

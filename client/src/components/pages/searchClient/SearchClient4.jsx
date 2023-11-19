@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import MyInput from '../../ui/inputs/MyInput';
 import MyButton from '../../ui/buttons/buttonOrange/MyButton';
 
-const SearchClient = () => {
+const SearchClient4 = () => {
     return (
         <div className={moduleCreateOrderPage.create}>
             <div className={moduleCreateOrderPage.createBox}>
@@ -20,18 +20,31 @@ const SearchClient = () => {
                 </div>
                 <div>
                     <h2>
-                        Как к вам обращаться?
+                        Город
                     </h2>
-                    <MyInput title='Имя' />
+                    <MyInput title='Владивосток' />
+                </div>
+                <div>
+                    <h2>
+                        Дом
+                    </h2>
+                    <MyInput title='Дом' />
+                </div>
+                <div>
+                    <h2>
+                        Квартира
+                    </h2>
+                    <MyInput title='Дом' />
                 </div>
                 <div style={{ 'margin-top': '30px', 'display': 'flex', 'alignItems': 'right', 'justifyContent': 'right' }}>
-                    <Link to='/order2'>
+                    <Link to='/order5'>
                         <MyButton title='Далее' />
                     </Link>
                 </div>
+
             </div>
         </div>
     );
 };
 
-export default SearchClient;
+export default SearchClient4;

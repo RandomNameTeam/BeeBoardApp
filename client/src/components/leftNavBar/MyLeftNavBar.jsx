@@ -7,6 +7,7 @@ import MyButtonCreateOrder from '../ui/buttons/buttonHome/MyButtonCreateOrder';
 import MyButtonSearch from '../ui/buttons/buttonHome/MyButtonSearch';
 import MyButtonFavorite from '../ui/buttons/buttonHome/MyButtonFavorite';
 import MySmallCard from '../ui/smallCard/MySmallCard';
+import MyBee from '../ui/beeImg/MyBee';
 import { Link } from 'react-router-dom';
 
 const MyLeftNavBar = () => {
@@ -25,6 +26,7 @@ const MyLeftNavBar = () => {
                         <Link to='/order'><MyButtonSearch/></Link>
                     </li>
                 </ul>
+                <MyBee/>
             </div>
         </div>
     );
